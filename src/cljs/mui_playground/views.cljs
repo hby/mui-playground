@@ -12,12 +12,18 @@
 
 (defn ui []
   [m/Paper {:style paper-style :zDepth 4}
+
    [m/Tabs
     [m/Tab {:label "Purchase"}]
-    [m/Tab {:label "Refinance"}]]
+    [m/Tab {:label "Refinance"}]
+    [m/Tab {:label "Prequalification"}]
+    ]
+
    [m/DatePicker {:hintText "Birthday"}]
+
    [m/RaisedButton {:backgroundColor "red" :label "I like this loan" :labelColor "white"}]
-   [m/Slider {:defaultValue 0.5}]
+
+   [m/Slider {:defaultValue 0.3}]
 
    ]
   )
