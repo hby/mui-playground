@@ -1,0 +1,362 @@
+/* Aside(s)
+----------------------------------------*/
+
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6
+{
+    color: #aaa;
+}
+
+.page .menu
+{
+    height: 100%;
+    color: #aaa;
+}
+
+.page .menu.collapse
+{
+    background: #333;
+    float: left;
+    height: 100%;
+    width: auto;
+}
+
+.page #help.menu.collapse, .page #info.menu.collapse
+{
+    float: right;
+}
+
+.page .menu.collapse.height
+{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.35s ease;
+    -moz-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
+}
+
+.page .menu.collapse.width
+{
+    position: relative;
+    width: 0;
+    overflow: hidden;
+    -webkit-transition: width 0.35s ease;
+    -moz-transition: width 0.35s ease;
+    -o-transition: width 0.35s ease;
+    transition: width 0.35s ease;
+}
+
+#help .page .menu .collapse-inner
+{
+    text-align: center;
+}
+
+.page .menu .nav-stacked
+{
+    border-bottom: 2px solid #60605b;
+    padding: 25px 0;
+    margin: 0 20px;
+    text-align:left;
+}
+
+.nav-tabs.nav-stacked > li > a
+{
+    border: 0;
+    color: #aaa;
+    font-size: 18px;
+    letter-spacing: .06em;
+}
+
+.nav-tabs.nav-stacked > li > a:hover,
+.nav-tabs.nav-stacked > li > a:active,
+.nav-tabs.nav-stacked > li > a:focus
+{
+    background: none;
+    border-radius: none;
+}
+
+.collapse-inner form
+{
+    padding: 25px 25px 10px;
+}
+
+.collapse-inner form label
+{
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.collapse-inner form input
+{
+    font-size: 14px;
+    border: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    width: 125px;
+}
+
+.collapse-inner form input[readonly]
+{
+    background: #333;
+}
+
+.collapse-inner form input[type='password'][readonly]
+{
+    text-align: right;
+}
+
+.collapse-inner form button
+{
+    color: #686868;
+    clear: both;
+    font-size: 12px;
+    width: 100%;
+    margin: 20px 0 0;
+}
+
+.collapse-inner .logo
+{
+    background: url('../../img/tablet/2@x/logo-gr.png') no-repeat scroll top left;
+    background-size: 179px 51px;
+    display: block;
+    height: 51px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    text-indent: -9999em;
+    width: 179px;
+}
+#info {
+    position: fixed;
+    top: 0;
+    left: 15px;
+    width: 100%;
+    z-index: -1;
+    transition: all 300ms ease;
+}
+.content.help-active #info {
+    z-index: 1;
+}
+@media (max-width: 991px) {
+    #info .sidebar-help {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    #info {
+        z-index: 1;
+        position: relative;
+        left: 0;
+    }
+    #info.fixed {
+        position: fixed;
+        left: auto;
+    }
+    #info.fixed .sidebar-help {
+        max-width: 200px;
+    }
+}
+
+/* User box
+----------------------------------------- */
+
+.content.user
+{
+    color: #686868;
+}
+
+.content.user
+{
+    padding: 0;
+    text-align: center;
+}
+
+.content.user p
+{
+    color: #aaa;
+    font-size: 12px;
+    font-style: italic;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow: visible;
+}
+
+.content.user p.questions
+{
+    padding: 20px 0 0;
+}
+
+.content.user a
+{
+    display: block;
+    font-size: 12px;
+}
+
+.content.user .item
+{
+    background: #fff;
+    margin: 0 auto;
+    text-align: left;
+    padding: 10px;
+    width: 200px;
+}
+
+.content.user .item h3
+{
+    font-size: 16px;
+    margin: 0;
+    line-height: inherit;
+    padding: 0;
+}
+
+.content.user .item a
+{
+    font-size: 14px;
+}
+
+.content.user .item h4,
+.content.user .item .user-id
+{
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.1em;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.user-pic
+{
+    width: 45%;
+    float: left;
+    margin: 0 15px 0px 0;
+}
+
+.user .contact
+{
+    margin-top:80px;
+}
+
+.user .contact a.num
+{
+    color: #777777;
+    font-weight: normal;
+}
+
+.user .contact .num, .user .contact a
+{
+    display: block;
+    margin-bottom: 5px;
+    word-break: break-all;
+}
+
+.user .contact a.num em
+{
+    color: #EE2E24;
+    display: inline;
+    font-size: 11px;
+    font-style: normal;
+}
+
+.content.user .item p
+{
+    line-height: 1.2em;
+    padding: 0;
+}
+
+#help .btn-group
+{
+    margin: 20px auto 30px;
+    text-align: center;
+    display: block;
+}
+
+#help .btn-group button
+{
+    background: url('../../img/tablet/2@x/icon-progress@2x.png') no-repeat scroll top left;
+    background-size: 10px 10px;
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    text-indent: -999em;
+    overflow: none;
+    height: 12px;
+    width: 12px;
+    padding: 0;
+    margin: 0 3px;
+}
+
+#help .btn-group button.active
+{
+    background: url('../../img/tablet/2@x/icon-progress-active@2x.png') no-repeat scroll top left;
+    background-size: 10px 10px;
+}
+
+/* Swipe
+-----------------------------------------*/
+
+/* Application Slider/Swiper */
+.swipe
+{
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap
+{
+    overflow: hidden;
+    position: relative;
+    padding: 15px 0;
+}
+
+.swipe-wrap > section
+{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    position: relative;
+}
+
+#info .swipe-wrap > section
+{
+    display: none;
+}
+
+#info .swipe-wrap > section.selected
+{
+    display: block;
+}
+
+.help-content-section-scroll
+{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.help-content-section > h2 {
+    font-size: 18px;
+}
+.help-login {
+    margin-top: 10px;
+}
+.help-login > a, .help-login > a:hover {
+    color: #0088cc;
+}
+
+.selected-menu-item {
+    color: white !important;
+}
+
+.menu-item:hover {
+    color: #C3C6DB !important;
+}

@@ -1,0 +1,16 @@
+
+@import "base.css";
+/*basic global html styles*/
+@import "main.css";
+/*main layout and pattern styles*/
+@import "asides.css";
+/*layout and custom styles of both sidebars*/
+@import "forms.css";
+/*forms layout and pattern styles*/
+@import "intropages.css";
+/*custom styles for Welcome and Signup pages*/
+
+/*---------------------------------------
+    Guaranteed Rate - Tablet Build
+--------------------------------------- */
+

@@ -1,0 +1,63 @@
+/* Progres Bar Component */
+.p-bar-container {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+}
+
+.p-bar-container img{ width:100%; max-width: 864px; margin:0 auto; display: block; }
+
+.p-bar {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width : 1201px){
+    body::after {
+        content: 'gr-xl';
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1200px){
+    body::after {
+        content: 'gr-l';
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 992px){
+    body::after {
+        content: 'gr-m';
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .p-bar-container{ display: none; }
+    body::after {
+        content: 'gr-s';
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 480px){
+    .p-bar-container {
+        display: none;
+    }
+
+    body::after {
+        content: 'gr-xs';
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 320px){
+    .p-bar-container {
+        display: none;
+    }
+
+    body::after {
+        content: 'gr-xxs';
+        display: none;
+    }
+}

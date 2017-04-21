@@ -1,0 +1,617 @@
+/* From Styles
+---------------------------------------- */
+
+form {}
+
+.bootstrap-select:not([class*=span]) {
+    width: 100%;
+}
+input.span12,
+textarea.span12,
+.uneditable-input.span12 {
+    width: 100%;
+}
+
+fieldset {
+    min-width: 100%;
+}
+label {
+    color: #4c4c4c;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+label small {
+    font-size: 12px;
+    font-style: italic;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input
+{
+    color: #262626;
+    text-transform: none;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    margin-bottom: 26px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    background: #fdfdfd;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    clear: both;
+    margin-top: 10px;
+}
+input.with-helper-text {
+    margin-bottom: 0;
+}
+input.with-helper-text + .helper-text,
+.input-helper-text {
+    font-size: 14px;
+    color: #4c4c4c;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+select,
+input[type="file"] {
+    color: #262626;
+    text-transform: none;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    margin-bottom: 26px;
+    border-radius: 0;
+    border: 1px solid #e4e4e4;
+    box-shadow: none;
+    background: #fdfdfd;
+}
+td input[type="text"] {
+    margin-bottom: 0;
+}
+.radio-group,
+.checkbox-group {
+    margin-bottom: 26px;
+}
+.question-group {
+    margin-bottom: 30px;
+}
+input[type=checkbox],
+input[type=radio] {
+    display:none;
+}
+input[type=checkbox] + label.checkbox,
+input[type=radio] + label.radio {
+    display: inline-block;
+    margin: 10px 0 0 30px;
+}
+.radio-group input:first-child + label,
+.checkbox-group input:first-child + label {
+    margin-left: 0;
+}
+input[type=checkbox] + label.checkbox > span,
+input[type=radio] + label.radio > span {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 4px 8px 4px 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    vertical-align: bottom;
+}
+input[type=radio] + label.radio > span {
+    border-radius: 50%;
+    background: #f9f9f9;
+}
+input[type=radio] + label.radio > span > span {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f9f9f9;
+}
+input[type=radio]:checked + label.radio > span > span {
+    background: #0079a4;
+}
+input[type=checkbox]:checked + label.checkbox > span:before {
+    display: inline-block;
+}
+input[type=checkbox] + label.checkbox:hover,
+input[type=radio] + label.radio:hover {
+    cursor: pointer;
+}
+
+.radio-fix.input-inline input[type=radio] + label.radio > span {
+    display: inline-block;
+    float: left;
+    margin-right: 15px
+}
+.checkbox-fix input[type=hidden] + label.checkbox > span {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    vertical-align: bottom;
+}
+.checkbox-fix.input-inline input[type=hidden] + label.checkbox > span {
+    display: inline-block;
+    float: left;
+    margin-right: 15px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+.checkbox-fix input[type=hidden] + label.checkbox > span:before {
+    display:none;
+    content: "\f00c";
+    color: #0079a4;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    font-size: 13px;
+}
+.checkbox-fix input[type=checkbox]:checked + input[type=hidden] + label.checkbox > span:before {
+    display: inline-block;
+}
+.checkbox-fix input[type=hidden] + label.checkbox:hover {
+    cursor: pointer;
+}
+
+.filter-group {
+    display: inline-block;
+    margin-bottom: 26px;
+    width: 100%;
+}
+@media screen and (min-width : 992px) {
+    .filter-group {
+        width: auto;
+    }
+}
+.filter-group input[type=checkbox] + label.filter,
+.filter-group input[type=radio] + label.filter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: #666;
+    font-size: 13px;
+    font-size: 0.813rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 7px 25px;
+    margin-left: -1px;
+    margin-bottom: 0;
+    background: #f5f5f5;
+    border: 1px solid #dbdbdb;
+}
+.filter-group input[type=checkbox]:first-of-type + label.filter,
+.filter-group input[type=radio]:first-of-type + label.filter {
+    margin-left: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.filter-group input[type=checkbox]:last-of-type + label.filter,
+.filter-group input[type=radio]:last-of-type + label.filter {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.filter-group input[type=checkbox]:not(:checked) + label.filter:hover,
+.filter-group input[type=radio]:not(:checked) + label.filter:hover {
+    cursor: pointer;
+}
+.filter-group input[type=checkbox]:checked + label.filter,
+.filter-group input[type=radio]:checked + label.filter {
+    color: #d13239;
+    font-weight: 600;
+    padding-left: 24px;
+    background: #fff;
+    border-color: #d13239;
+    z-index: 1;
+}
+.filter-group-50-50 input[type=checkbox] + label.filter,
+.filter-group-50-50 input[type=radio] + label.filter {
+    width: 50%;
+}
+@media screen and (min-width : 992px) {
+    .filter-group-50-50 input[type=checkbox] + label.filter,
+    .filter-group-50-50 input[type=radio] + label.filter {
+        width: auto;
+    }
+}
+
+.input-text-currency {
+    position: relative;
+}
+.input-text-currency:before {
+    content: '$';
+    position: absolute;
+    top: 11px;
+    left: 15px;
+}
+.input-text-currency input {
+    padding-left: 25px;
+}
+
+
+a[data-password-button],
+div[data-meter] {
+    display: none;
+}
+.psm-container {
+
+    margin-top: 4px;
+    margin-bottom: 26px;
+}
+#password-strength-meter {
+    display: block;
+}
+#password-strength-meter > div {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    width: 33.33%;
+    height: 17px;
+    background: #ccc;
+    border-left: 1px solid #fff;
+}
+#password-strength-meter > div:first-child {
+    border-left: none;
+}
+#password-strength-meter > div span {
+    display: none;
+    text-align: center;
+    padding-top: 1px;
+}
+#password-strength-meter.veryweak div:first-child,
+#password-strength-meter.weak div:first-child {
+    background-color: #cc2d35;
+}
+#password-strength-meter.veryweak div:first-child span,
+#password-strength-meter.weak div:first-child span {
+    display: block;
+}
+#password-strength-meter.medium div:nth-child(-n+2) {
+    background-color: #fdb513;
+}
+#password-strength-meter.medium div:nth-child(2) span {
+    display: block;
+}
+#password-strength-meter.strong div,
+#password-strength-meter.verystrong div {
+    background-color: #54b237;
+}
+#password-strength-meter.strong div:last-child span,
+#password-strength-meter.verystrong div:last-child span {
+    display: block;
+}
+
+.bootstrap-select.btn-group,
+.bootstrap-select.btn-group[class*=span] {
+    margin-bottom: 18px;
+}
+
+.disabled-input {
+    background-image:none !important;
+    background-color: #efefef !important;
+    color: #706756 !important;
+}
+
+.table h4,
+.table h4 label {
+    padding-top: 25px;
+    height: 100%;
+    padding-bottom: 10px;
+    margin-right: 5%;
+}
+.table h4 label {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Custom Selectbox
+--------------------------------------- */
+/*[class*="span"] .controls-row > select + [class*="span"].bootstrap-select,*/
+[class*="span"].bootstrap-select {
+    margin-left: 0;
+}
+/*.controls-row > select + [class*="span"].bootstrap-select + select + [class*="span"].bootstrap-select {
+    margin-left: 2.127659574468085%;
+}*/
+.bootstrap-select {
+    margin-bottom: 10px;
+}
+
+.bootstrap-select:focus {
+    background-color: green;
+}
+
+.bootstrap-select button.dropdown-toggle {
+    font-family:  'myriad-pro', 'Myriad Pro', Helvetica, Arial;
+    font-size: 18px;
+    text-shadow: none;
+    color:#1589c9;
+    width: 100%;
+    padding: 9px 10px;
+    margin: 0;
+    box-shadow: none;
+    border: 1px solid #d3d3d3;
+    background-color: rgb(245, 245, 245);
+    background-image: -webkit-linear-gradient(top, #f4f4f4, #fff);
+    background-image: linear-gradient(to bottom, #f4f4f4, #fff);
+    text-transform: none;
+}
+.bootstrap-select button.dropdown-toggle:hover {
+    background-image: none;
+    background-color: #f4f4f4;
+    *background-color: #f4f4f4;
+}
+.bootstrap-select .btn .caret {
+    float:right;
+    border-width: 8px 8px 0;
+    border-top-color:#1589c9;
+}
+.bootstrap-select.open .btn .caret {
+    border-width: 0 8px 8px;
+    border-bottom: 8px solid #1589c9;
+}
+.bootstrap-select.open .dropdown-toggle,
+.bootstrap-select.open .dropdown-menu {
+    border: 1px solid #1589c9;
+}
+.bootstrap-select.open .dropdown-toggle {
+    border-width: 1px 1px 0;
+}
+.bootstrap-select.open .dropdown-toggle:focus {
+    outline: transparent !important;
+}
+.bootstrap-select.open .dropdown-menu {
+    border-width: 0 1px 1px;
+}
+.bootstrap-select.btn-group,
+.bootstrap-select.btn-group[class*="span"] {
+    float:left;
+}
+
+.bootstrap-select.open .dropdown-menu a{
+    text-decoration:none;
+}
+/*.bootstrap-select.btn-group .btn .filter-option {
+    overflow:visible;
+}*/
+.bootstrap-select .dropdown-menu.open {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-top: 0;
+}
+.bootstrap-select .dropdown-menu > li {
+    border-top: 1px dotted #ccc;
+    margin: 0 4px;
+}
+.bootstrap-select .dropdown-menu > li:first-child {
+    border-top: none;
+}
+.bootstrap-select .dropdown-menu > li > a {
+    font-size: 18px;
+    font-weight: normal;
+    text-shadow: none;
+    color: #1589c9;
+    padding: 8px 10px;
+}
+.bootstrap-select .dropdown-menu > li > a:hover,
+.bootstrap-select .dropdown-menu > li > a:focus {
+    background-color: #1589c9;
+    color:#fff;
+}
+.btn-group.open .btn.dropdown-toggle {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Custom Forms + Tables
+--------------------------------------- */
+
+/*.control-group:before,
+.control-group:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.control-group:after {
+    clear: both;
+}*/
+.controls-row [class*="span"],
+.row-fluid .controls-row [class*="span"] {
+    min-height: inherit;
+}
+
+[class*="span"] > input[type="text"] + input[type="text"],
+[class*="span"] > input[type="text"] + input[type="text"] + input[type="text"] {
+    margin-top: 10px;
+}
+form .table tr td {
+    padding: 5px 0 0;
+    border-top: none;
+}
+form .table tr td:first-child {
+    background: url('../../img/tablet/bdr-formlabel.png') 0 110% repeat-x;
+}
+
+form .table tr.basic td,
+form .table tr.basic td:first-child,
+form .table tr.basic td:last-child {
+    background: none;
+    padding: 1% 2% 0;
+    border-right: none;
+}
+form .table tr {
+    border: none;
+}
+form .table tr.fullwidth td {
+    padding: 10px 0 0;
+    border-top: none;
+    vertical-align: middle;
+    background: url('../../img/tablet/bdr-formlabel.png') 0 99% repeat-x;
+}
+form .table tr.fullwidth td:first-child {
+    border-right: 20px solid transparent;
+}
+/* Compact Form
+--------------------------------------- */
+
+.table.compact h4 {
+    padding-top: 0;
+    padding-left: 30px;
+}
+.table.compact h4 > strong {
+    margin-left: -25px;
+    font-style: italic;
+}
+.table.compact tr.fullwidth td:last-child {
+    text-align: right;
+}
+.table.compact tr.fullwidth.sub-parent td {
+    background: none;
+}
+.table.compact tr.fullwidth.sub-questions td {
+    padding-left: 4%;
+    text-align: left;
+    border-right: none;
+}
+.table.compact tr.fullwidth.sub-questions td .bootstrap-select.btn-group {
+    float:right;
+}
+
+
+/* Income Form
+--------------------------------------- */
+
+.table.income {
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+}
+.table.income th {
+    font-size: 18px;
+    font-family: "MyriadPro-Bold";
+    padding-bottom: 10px;
+}
+.table.income td {
+    padding-top: 0;
+    vertical-align: middle !important;
+    font-weight: normal;
+    font-size: 18px;
+    color:#333;
+}
+.table.income tr:last-child td:first-child {
+    font-weight: bold;
+}
+.table.income tr:last-child td {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.table.income tr:first-child th,
+.table.income tr:last-child td {
+    padding-left: 10px;
+}
+.table.income tr td:first-child {
+    text-align: right;
+    padding: 0 4% 0 0;
+    background: none;
+    color:#333;
+}
+.table.income tr th:last-child,
+.table.income tr td:last-child {
+    padding-left: 5%;
+}
+
+
+/* Added to make add-ons work in Bootstrap 2 */
+.input-append.input-block-level,
+.input-prepend.input-block-level {
+    margin-bottom: 0;
+}
+
+
+.input-append.input-block-level .add-on,
+.input-prepend.input-block-level .add-on {
+    text-transform: none;
+    font-size: 18px;
+    height: auto;
+    vertical-align: middle;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid #d3d3d3;
+    box-shadow: none;
+    height: 40px;
+    padding: 0 4px;
+    line-height: 38px;
+}
+
+.input-append.input-block-level > input,
+.input-prepend.input-block-level > input {
+    box-sizing: border-box;
+    min-height: inherit;
+    height: 40px;
+    width: auto;
+    width: calc(100% - 20px);
+}
+
+.input-append.input-block-level > input {
+    border-right: 0;
+}
+
+.input-prepend.input-block-level > input {
+    border-left: 0;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* End add-ons */
+
+.question-group input[type=checkbox] + label.checkbox,
+.question-group input[type=radio] + label.radio {
+    margin-left: 0;
+}
+.question-group-coborrower {
+    margin-top: 60px;
+}

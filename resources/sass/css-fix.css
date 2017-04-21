@@ -1,0 +1,280 @@
+/*
+    ?v=1 is specified at the end of the font file url's for cache busting purposes.
+
+    Any updates to the font files themselves require that the version number in the
+    query string be updated (e.g. v=1 => v=2) to force clients to pull the
+    latest version of the font file
+*/
+
+@font-face {
+    font-family: 'Chronica-Light';
+    src:  url('../fonts/ChronicaPro-LightWeb.woff?v=1') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronica-Regular';
+    src:  url('../fonts/chronicapro-regular-webfont.woff?v=1') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronica-Medium';
+    src:  url('../fonts/chronicapro-medium-webfont.woff?v=1') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronica-Bold';
+    src:  url('../fonts/chronicapro-bold-webfont.woff?v=1') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronica-Black';
+    src:  url('../fonts/ChronicaPro-BlackWeb.woff?v=1') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronica-Heavy';
+    src:  url('../fonts/chronicapro-heavy-webfont.woff?v=1') format('woff');
+}
+
+.chronica-light{   font-family: 'Chronica-Light', Helvetica, Arial, sans-serif; }
+.chronica-regular{ font-family: 'Chronica-Regular', Helvetica, Arial, sans-serif; }
+.chronica-medium{  font-family: 'Chronica-Medium', Helvetica, Arial, sans-serif; }
+.chronica-bold{    font-family: 'Chronica-Bold', Helvetica, Arial, sans-serif; }
+.chronica-black{    font-family: 'Chronica-Black', Helvetica, Arial, sans-serif; }
+.chronica-heavy{    font-family: 'Chronica-Heavy', Helvetica, Arial, sans-serif; }
+
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dm_lo-info {
+    margin-bottom: 20px;
+}
+
+.dm_lo-intro {
+    font-size: 13px;
+}
+
+.dm_lo-info p {
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.dm_profile-help p {
+    margin-top: 10px;
+}
+
+.dm_header {
+    padding-top: 5px;
+}
+
+.main-sidebar.thanks{ position:relative; top: 190px; }
+
+footer .ehl-logo{
+    display: inline-block;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+
+footer .ltvDisclaimer{ display: none; }
+
+footer .nmlsTxt a{ color:#0a0a0a; text-decoration: underline; }
+footer .nmlsTxt a:hover { text-decoration: none; }
+
+.most-important input[type=radio] + label.radio{ margin-left:0; display: block; }
+
+.callout-blue{ width: 100%; margin-top: 20px; }
+.callout-blue button{ width: 100%; }
+.callout-blue .bottomLeft{ float:left; width: 67%; height: 60px; margin-top: 30px; margin-bottom: 30px; background: url(/img/uw-logos.png) center center no-repeat; background-size: contain; }
+.callout-blue .bottomRight{ float:right; width: 33%; height: 60px; margin-top: 30px; margin-bottom: 30px; color: black; text-align: center; font-style: italic; font-size: 13px; padding-top: 10px; }
+.callout-blue .legal { padding-top: 30px; font-size: 14px; color:black; }
+
+.doubleCheck #nextStep{ margin-top: 0; }
+.doubleCheck h2{ font-family: 'Chronica-Light'; text-align: center; color: #4c4c4c; }
+span.footer-link-group a:first-child { padding-left: 0; }
+
+.credit h1{ line-height:43px; }
+
+.fleft{ float: left; }
+.fright{ float: right; }
+.cboth{ clear: both; }
+
+.declarations input[type=radio] + label.radio > span{ float: left; margin-right: 8px; }
+.declarations p{ margin-bottom: 5px; }
+.declarations .radio-group{  margin-bottom: 30px; }
+
+@media screen and (min-width: 768px) {
+    .dm_header {
+        padding-top: 15px;
+    }
+}
+
+.dm_header .dm_profile-image {
+    float: right;
+    width: 60px;
+    height: 60px;
+}
+
+.dm_header .dm_profile-image img {
+    margin-top: -8px;
+}
+
+.dm_short {
+    float: right;
+    text-align: right;
+    margin-right: 15px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.dm_short .dm_lo-name{ font-size: 16px; }
+
+.dm_short a {
+    color: #fff !important;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+@media screen and (max-width: 374px) {
+    .dm_short a {
+        font-size: 12px;
+    }
+}
+
+.dm_short a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 667px) {
+    .footer-link-group {
+        display: inline-block;
+        padding-top: 15px;
+    }
+}
+
+.footer-link-group a {
+    white-space: nowrap;
+}
+
+#footer {
+    background: none;
+    border: 0;
+}
+
+.footer-bottom {}
+
+@media screen and (max-width: 374px) {
+    .footer-bottom .copyright-links-container {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 666px) {
+    .footer-bottom .copyright-links-container {
+        font-size: 16px;
+    }
+}
+
+.footer-bottom .secure-info-container {
+    padding-left: 37px;
+    margin-top: 14px;
+    background: url(../../img/footer-lock.png) 0 4px no-repeat;
+    max-width: 150px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 18px;
+}
+@media screen and (min-width: 768px) {
+    .footer-bottom .secure-info-container {
+        margin-top: 0;
+        float: right;
+    }
+}
+
+footer#footer-new {
+    padding-bottom: 40px;
+}
+@media screen and (min-width : 1200px) {
+    footer#footer-new {
+        padding-bottom: 100px;
+    }
+}
+
+.footer-link-group {
+    font-size: 13px;
+}
+
+span.footer-link-group a {
+    padding: 0 10px;
+}
+@media screen and (max-width: 374px) {
+    span.footer-link-group a {
+        padding: 0 4px;
+        font-size: 12px;
+    }
+}
+
+/* @media queries */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px){
+    /*body{ border:2px solid teal !important; }*/
+    body{ background-size: auto; }
+    .sub-header{ max-width: 100%; }
+    .doubleCheck #nextStep{ margin-top: 26px; float:right; }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px){
+    /*body{ border:2px solid lime !important; }*/
+    body{ padding:0 30px; }
+    .sub-header{ margin-bottom: 20px; }
+    h3.verify-header{ margin-top: 30px; }
+    .callout-blue .bottomLeft{ display:none; }
+    .callout-blue .bottomRight{ float:none; width: 100%; }
+    .doubleCheck #nextStep{ width: 100%; margin:26px auto; display: block; }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px){
+    /*body{ border:2px solid blue !important; }*/
+    body{ padding:0 15px; }
+    .callout-blue{ width: 100%; }
+    .navbar{ display: none; }
+    .full-band.white{ height: 30px; }
+    .gr-logo{ padding-top: 18px; }
+    .doubleCheck .sub-header{ margin-bottom: 0; }
+    .h1, .h2, .h3, h1, h2, h3{ margin-top: 0; }
+    h1{ margin-bottom: 20px; max-width: 100%; font-size: 1.6rem; }
+    .sub-header{ font-size:24px; line-height: 30px; }
+    .credit h1{ line-height:35px; }
+    .credit .callout-blue{ padding: 0; background: none; border:none; }
+    .credit .callout-blue button.button-primary{ white-space: normal; line-height: 24px; }
+    .loan-center h1{ text-align: center; }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px){
+    /*body{ border:2px solid red !important; }*/
+    .mobile-utility-menu{ padding:0; }
+    .gr-logo{ display: none; }
+    .gr-logo.arrow{ display: block !important; width:48px; padding-top:14px; }
+    .full-band.white{ height: 20px; }
+    .main-wrapper{ padding-left: 0; padding-right: 0; }
+    .main-content{ margin-top: 10px; padding: 30px 20px 40px 20px; }
+    h1{ font-size: 1.4rem; }
+    .sub-header{ font-size: 22px; line-height: 28px; }
+    .doubleCheck .info-section strong{ display: block; word-break: break-all; font-size: 17px; line-height: 1.6; margin-bottom: 20px; }
+
+}
+
+
+
+

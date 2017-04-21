@@ -1,0 +1,389 @@
+/* Intro Pages (Sign Up + Welcome Back)
+-----------------------------------------*/
+
+@media screen and (min-width: 992px) {
+    #content.intro, #content.forgotpassword {
+        padding-top: 50px;
+        background: #fff;
+    }
+}
+
+.forgotpassword-link {
+    padding-left: 10px;
+}
+
+/* Welcome Page */
+.welcome .frame {
+    margin-top: 75px;
+}
+.welcome h1 + p {
+    color: #ee2e24;
+}
+.welcome {
+    padding-bottom: 30px;
+}
+
+/* Marketing
+ ------------------------------------*/
+
+.intro .logo {
+    margin: 0 auto 20px;
+    text-align: center;
+    display:block;
+}
+.intro h1 + p {
+    font-size: 14px;
+}
+.intro ol.howitworks {
+    margin-left: 0px;
+    margin-top: 5px;
+    list-style: none;
+}
+ol.howitworks li h4 {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Myriad Pro', 'myriad-pro', Arial, Helvetica;
+    color: #333333;
+}
+ol.howitworks li {
+    padding-top: 5px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    font-size: 16px;
+}
+
+p.howitworks {
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0em;
+}
+
+
+/* Sign Up Form
+ ------------------------------------*/
+
+.intro .frame {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 5px;
+}
+.intro h2 {
+    font-family: 'Myriad-Pro', Helvetica, Arial;
+    font-size: 22px;
+    font-weight: 600;
+}
+.intro h2 i {
+    font-size: 20px;
+    -webkit-transform: translate(0,-2px);
+    transform: translate(0,-2px);
+}
+.intro-subheading {
+    font-family: "Myriad-Pro", Helvetica, Arial;
+    font-weight:600;
+    color: #9a9893;
+    font-size: 16px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.intro-subheading span {
+    display: inline-block;
+    font-size: 22px;
+    margin: 0 4px;
+}
+.intro .radio.inline + .radio.inline {
+    margin-left: 0;
+    margin-right: 0;
+}
+.intro .btn-primary {
+    margin: 10px 0 15px;
+}
+.intro .btn-primary span {
+    padding-left: 25px;
+    background: url('../../img/tablet/icon-lock.png') left top no-repeat;
+}
+
+.landing_header {
+    padding-top:15px;
+    padding-bottom:48px;
+    height:60px;
+}
+.landing_header span {
+    font-size: 28px;
+    color: #333333;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0em;
+    display:inline-block;
+    padding-top:13px;
+}
+
+.landing_small {
+    font-size: 11px;
+    color: #b1b1b5;
+    line-height: 19px;
+
+}
+
+.arrow_header {
+    position: absolute;
+    left: 3.2%;
+    width: 50%;
+    height: 100px;
+    background: url('../../img/tablet/get-started-left-arrow.png') left top no-repeat;
+    z-index: -1;
+}
+
+.contact_signup {
+    font-size: 21px;
+    color: #333333;
+    line-height: 26px;
+    letter-spacing: 0em;
+    margin-bottom:21px;
+}
+
+@media (max-width: 1250px) {
+    .arrow_header {
+        display:none;
+    }
+}
+
+.intro ::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #686868;
+    font-style: italic;
+}
+
+.intro :-moz-placeholder { /* Firefox 18- */
+    font-size: 12px;
+    color: #686868;
+    font-style: italic;
+}
+
+.intro ::-moz-placeholder {  /* Firefox 19+ */
+    font-size: 12px;
+    color: #686868;
+    opacity: 1;
+    font-style: italic;
+}
+
+.intro :-ms-input-placeholder {
+    color: #686868;
+    font-style: italic;
+}
+
+.intro .placeholder {
+    color: #686868;
+    font-style: italic;
+}
+
+/* Refer Logos
+ ------------------------------------*/
+
+.refer-logos {
+    margin: 2em 0;
+    text-align: center;
+}
+.refer-logos img {
+    display: inline;
+    margin: 10px 1em;
+}
+
+/*Loan Center
+------------------------------------*/
+
+.loancenter-frame {
+    min-height: 475px;
+}
+.loancenter-frame-cookied {
+    margin: 0 auto;
+
+}
+.loancenter-contact {
+    padding-top: 5px;
+}
+.loancenter-emailcookied {
+    font-size: large;
+}
+
+.loancenter-login {
+    text-align:center;
+}
+
+.loancenter-cookied-links {
+    margin-top:10px;
+}
+
+.loancenter-terms {
+    font-size: 9px;
+    margin-top:10px;
+}
+
+.loancenter-heading {
+    padding-bottom:25px;
+}
+
+.loancenter-form {
+    margin: 0;
+}
+
+.loancenter-back {
+    width: 100%;
+}
+
+/*Activate - Contact LO Page*/
+
+.contact-lo-frame {
+    margin: 0px auto;
+    width: 50%;
+}
+.contact-lo-pic {
+    width: 25%;
+    float: left;
+    margin: 0 15px 0px 0;
+}
+.contact-lo-name {
+    font-size: x-large;
+    font-weight: bold;
+    color: #686868
+}
+
+.contact-lo-title {
+    color: #aaa;
+}
+
+.contact-lo-nmls {
+    color: #686868;
+}
+
+
+
+.signup-main-image {
+    position: relative;
+    width: 100%;
+}
+.signup-main-image .signup-heading {
+    color: #cc2d30;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+@media screen and (min-width: 992px) {
+    .signup-main-image .signup-heading {
+        font-size: 24px;
+        position: absolute;
+        top: 8px;
+        right: 37px;
+        text-align: right;
+        max-width: 180px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .signup-main-image .signup-heading {
+        font-size: 41px;
+        right: 45px;
+        max-width: 275px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .signup-main-image .signup-ty {
+        font-size: 9px;
+        position: absolute;
+        bottom: -10px;
+        right: 12px;
+        text-align: right;
+        max-width: 159px;
+
+    }
+}
+@media screen and (min-width: 1200px) {
+    .signup-main-image .signup-ty {
+        font-size: 12px;
+        bottom: -6px;
+        right: 20px;
+        max-width: 216px;
+    }
+}
+
+.signup-approval-list {
+    margin: 0 0 40px;
+    border-bottom: 0;
+}
+.signup-approval-list i,
+.signup-get-started-heading i {
+    color: #cc2d30;
+    margin-right: 4px;
+    margin-left: -5px;
+}
+.signup-approval-list dt {
+    font-family: 'Myriad-Pro', Helvetica, Arial;
+    color: #61615c;
+    font-weight: 600;
+}
+.signup-approval-list dd {
+    color: #9a9893;
+    font-size: 16px;
+    font-size: 1rem;
+    margin: 4px 0 30px 36px;
+}
+.signup .trust-icons-2 {
+    margin-top: 30px;
+}
+.signup .trust-icons-2 img {
+    width: 100%;
+}
+.signup-get-started-heading {
+    text-align: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .signup-get-started-heading {
+
+    }
+}
+.button-get-started {
+    margin-bottom: 18px;
+}
+.button-get-started small {
+    display: inline-block;
+    -webkit-transform: translate(0,-2px);
+    transform: translate(0,-2px);
+}
+.button-get-started i {
+    margin-left: 5px;
+}
+.signup-terms {
+    color: #9a9893;
+    font-size: 12px;
+}
+
+.lo-profile-card {
+    padding-top: 30px;
+    border-top: 1px solid #e9e9e9;
+}
+.lo-profile-card .profile-image {
+    float: left;
+    margin-right: 10px;
+}
+.lo-profile-card .profile-info {
+    float: left;
+    color: #61615c;
+    line-height: 1.3;
+}
+.lo-profile-card .profile-info small {
+    font-size: 70%;
+}
+#formSignup .bootstrap-select {
+    width: 100%;
+}
+
+.signup .button-get-started {
+    margin-top: 0;
+}

@@ -1,0 +1,19 @@
+{
+  "repository": {},
+  "license": "UNLICENSED",
+  "scripts": {
+    "deploy": "brunch build --production",
+    "watch": "brunch watch --stdin"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "brunch": "2.7.4",
+    "clean-css-brunch": "~2.0.0",
+    "copycat-brunch": "^1.1.0",
+    "css-brunch": "~2.0.0",
+    "sass-brunch": "^2.10.4"
+  }
+}

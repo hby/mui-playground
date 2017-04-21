@@ -1,7 +1,10 @@
 /*.log
 /target
 /*-init.clj
-/resources/public/js/compiled
 out
 /.idea
 *.iml
+node_modules/
+resources/public/css/
+resources/public/fonts/
+resources/public/js/

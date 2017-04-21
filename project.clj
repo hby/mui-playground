@@ -3,7 +3,7 @@
                  [org.clojure/clojurescript "1.9.229"]
                  [reagent "0.6.0"]
                  [re-frame "0.9.2"]
-                 [reagent-material-ui "0.2.1"]]
+                 [reagent-material-ui "0.2.2"]]
 
   :plugins [[lein-cljsbuild "1.1.4"]]
 
@@ -19,7 +19,8 @@
   {:dev
    {:dependencies [[binaryage/devtools "0.8.2"]]
 
-    :plugins      [[lein-figwheel "0.5.9"]]
+    :plugins      [[lein-figwheel "0.5.9"]
+                   [lein-shell "0.5.0"]]
     }}
 
   :cljsbuild
@@ -47,4 +48,7 @@
 
     ]}
 
+  :prep-tasks ["sass" "javac" "compile" ["cljsbuild" "once"]]
+  :aliases {"sass" ["shell" "npm" "run" "deploy"]
+            "sass-watch" ["shell" "npm" "run" "watch"]}
   )
